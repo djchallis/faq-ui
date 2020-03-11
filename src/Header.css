@@ -1,0 +1,94 @@
+:root {
+    --covea-insurance-red: #DB1831;
+    --covea-insurance-orange: #F29400;
+    --covea-insurance-turquoise:  #00938E;
+    --covea-insurance-purple: #7D0D6B;
+    --covea-insurance-green: #78A02E;
+    --covea-insurance-blue:  #508FCC;
+    --covea-insurance-grey: #616266;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas: "logo greeting";
+    -ms-grid-columns: auto 1fr;
+    grid-template-columns: auto 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+    border-bottom: 1px solid var(--covea-insurance-orange);
+    grid-template-areas: "logo greeting";
+    margin-bottom: 1rem;
+  }
+  .header__logo {
+    grid-area: logo;
+    height: 4rem;
+    margin: 0.5rem;
+    width: 8rem;
+    background-image: url(/images/covea-logo.svg);
+    background-position-x: left;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .header__greeting {
+    align-self: center;
+    color: var(--covea-insurance-red);
+    font-size: 2rem;
+    grid-area: greeting;
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: var(--covea-insurance-red);
+  }
+.main__choose-image {
+    background-color: var(--covea-insurance-orange);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.75rem;
+    height: 12vmin;
+    margin: 1rem;
+    width: 36vmin;
+}
+.main__image-preview {
+    border: 1px solid var(--covea-insurance-grey);
+    display: flex;
+    height: 40vmin;
+    justify-content: center;
+    width: 40vmin;
+}
+.main__image-upload-status--uploading {
+    -webkit-animation: spinner 2s linear infinite;
+    animation: spinner 2s linear infinite;
+    border-color: var(--covea-insurance-red) var(--covea-insurance-red) var(--covea-insurance-orange) var(--covea-insurance-orange);
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 0.3rem;
+}
+.main__upload-image {
+    background-color: var(--covea-insurance-red);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.75rem;
+    height: 12vmin;
+    margin: 1rem;
+    width: 36vmin;
+}
+.main__upload-image:disabled {
+    background-color: var(--covea-insurance-grey);
+    cursor: default;
+}
+.footer {
+    align-items: center;
+    border-top: 1px solid var(--covea-insurance-red);
+    color: var(--covea-insurance-grey);
+    font-size: 0.5rem;
+    padding: 0.5rem;
+}
+
+
+
+
